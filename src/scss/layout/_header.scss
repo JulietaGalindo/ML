@@ -1,0 +1,33 @@
+.header{
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio{
+        background-position: center center;
+        background-size: cover;
+        @include tablet{
+            min-height: 70rem;
+        }
+        .contenido-header{
+             @include tablet{
+        min-height: 70rem;
+        
+    }
+        }
+    }
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+    h1{
+        font-size: 10px;
+        text-align: left;
+        color: white;
+        font-weight: $bold;
+        list-style: 2;
+    }
+}
